@@ -20,13 +20,19 @@ body {
 }
 
 .logo {
+    color: var(--sidebar-color);
     display: flex;
     align-items: center;
-    cursor: pointer;
+    text-decoration: underline;
     transition: .2s ease-in-out;
     gap: 1rem;
     font-size: 1.5rem;
     text-shadow: rgb(157, 157, 157) 1px 1px, rgba(0, 0, 0, 0.337) 2px 2px;
+    cursor: default;
+}
+
+.logo img {
+    height: 4rem;
 }
 
 li {
@@ -51,18 +57,14 @@ h1 {
     padding-right: 1rem;
 }
 
-li:hover, .logo:hover {
+li:hover {
     background-color: rgba(255, 255, 255, 0.178);
     cursor: pointer;
     box-shadow: white -6px 0 0;
     padding-left: .5rem;
 }
 
-.logo img {
-    height: 4rem;
-}
-
-img {
+li img {
     cursor: pointer;
     height: 2rem;
 }
