@@ -10,7 +10,7 @@ body {
 .sidebar {
     display: grid;
     background-image: linear-gradient(rgb(34, 171, 250), rgb(25, 128, 187));
-    padding: 1rem;
+    padding-left: .4rem;
     grid-template-rows: auto auto 1fr;
     grid-area: 1 / 1 / -1 / 2;
 }
@@ -48,6 +48,7 @@ ul {
 
 h1 {
     color: var(--sidebar-color);
+    padding-right: 1rem;
 }
 
 li:hover, .logo:hover {
@@ -64,4 +65,26 @@ li:hover, .logo:hover {
 img {
     cursor: pointer;
     height: 2rem;
+}
+
+@media(max-width:500px) {
+    .sidebar {
+        overflow: hidden;
+    }
+    li p, .logo h1 {
+        display: none;
+    }
+    li {
+        margin-bottom: 1.1rem;
+        margin-left: -3px;
+    }
+    .logo img{
+        margin-left:-7px;
+        padding-right: .3rem;
+    }
+    li:hover, .logo:hover {
+        box-shadow: none;
+        padding-left: 0;
+        background-color: rgba(255, 255, 255, 0);
+    }
 }
