@@ -72,9 +72,11 @@ li img {
 
 .header {
     display: grid;
-    grid-template: repeat(4, 2fr) / 2fr 1fr;
+    align-items: center;
+    grid-template: 1fr 2fr / 2fr 1fr;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.267) 0 1px 2px;
+    padding: .7rem;
 }
 
 .search-container {
@@ -85,12 +87,13 @@ li img {
 }
 
 .icon {
-    height: 2rem;
+    height: 2.2rem;
     padding-left: .6rem;
+    cursor: pointer;
 }
 
 #search-field {
-    color: #47454d;
+    color: #37353c;
     font-weight: bold;
     background-color: #e4ddf4;
     box-shadow: #b4aec0 1px 1px 3px;
@@ -98,7 +101,7 @@ li img {
     height: 1.8rem;
     border: none;
     flex: auto;
-    padding-left: .5rem;
+    padding: 0 .5rem 0 .5rem;
 }
 
 label {
@@ -107,6 +110,28 @@ label {
 
 #search-field:focus {
     outline: none;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    height: 4rem;
+}
+
+.profile-pic {
+    height: 4rem;
+    border-radius: 50%;
+    border: rgb(195, 195, 195) solid 2px;
+    box-shadow: rgba(0, 0, 0, 0.337) 2px 2px 2px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.profile-pic:hover {
+    border: rgb(48, 177, 251) solid 2px;
+    box-shadow: rgba(23, 111, 162, 0.852) 2px 2px 2px;
 }
 
 @media(max-width:600px) {
