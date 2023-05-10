@@ -133,14 +133,18 @@ label {
     cursor: pointer;
 }
 
+.profile-pic:active, .icon:active {
+    transform: scale(.95);
+}
+
 h3 {
-    cursor: pointer;
     font-size: 1.3rem;
 }
 
-h3:hover, a:hover {
+.project h3:hover, .profile-name:hover, a:hover {
     color: rgb(42, 147, 209);
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .greeting-container {
@@ -190,6 +194,7 @@ h3:hover, a:hover {
     background-color: rgb(28, 166, 246);
     border: none;
     box-shadow: rgba(0, 0, 0, 0.504) 0 0 2px;
+    text-shadow: rgba(0, 0, 0, 0.511) 0 1px 2px;
     transition: .2s;
 }
 
@@ -204,7 +209,7 @@ h3:hover, a:hover {
     display: grid;
     background-color: rgb(203, 217, 225);
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr;
 }
 
 .project-container {
@@ -225,6 +230,10 @@ h3:hover, a:hover {
     border-radius: 20px;
     padding: 0 .5rem 1rem 1rem;
     box-shadow: inset rgb(34, 171, 250) .3rem 0 0, inset rgb(26, 135, 197) 0 -.3rem 0, rgba(0, 0, 0, 0.311) 0 0 .5rem;
+}
+
+.project:hover {
+
 }
 
 .project-title {
