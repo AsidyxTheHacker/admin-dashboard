@@ -14,7 +14,7 @@ body {
     padding-left: .4rem;
     grid-template-rows: auto auto 1fr;
     grid-area: 1 / 1 / -1 / 2;
-    min-height: 74rem;
+    min-height: 58.35rem;
 }
 
 .secondary-links {
@@ -75,7 +75,7 @@ li img {
     display: grid;
     align-items: center;
     grid-template: 1fr 2fr / 2fr 1fr;
-    background-color: white;
+    background-color: var(--sidebar-color);
     box-shadow: rgba(0, 0, 0, 0.267) 0 1px 2px;
     padding: .7rem;
 }
@@ -149,6 +149,7 @@ h3:hover {
     display: grid;
     grid-template: 1fr / auto 1fr;
     gap: 0.5rem 1rem;
+    padding-left: 2rem;
     font-weight: bold;
 }
 
@@ -172,6 +173,35 @@ h3:hover {
     grid-row: 1;
 }
 
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.header-btn {
+    color: var(--sidebar-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 7rem;
+    height: 2.5rem;
+    padding: .2rem 0 .2rem 0;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgb(28, 166, 246);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.504) 0 0 2px;
+    transition: .2s;
+}
+
+.btn-container button:hover {
+    opacity: 1;
+    box-shadow: rgb(39, 143, 203) 0 3px 0;
+    background-color: rgb(73, 188, 255);
+    transform: scale(1.05);
+}
+
 @media(max-width:600px) {
     li p, .logo h1 {
         display: none;
@@ -191,9 +221,24 @@ h3:hover {
         background-color: rgba(255, 255, 255, 0);
     }
     .profile-container {
-        gap: .8rem;
+        gap: .6rem;
     }
     .icon {
-        padding-left: .2rem;
+        padding-left: .1rem;
+    }
+    .greeting-container {
+        padding-left: 0;
+    }
+    .btn-container {
+        flex-direction: column;
+        align-items: start;
+        padding-left: 1rem;
+        gap: .5rem;
+    }
+    h3 {
+        display: none;
+    }
+    .btn-container button:hover {
+        transform: scale(1);
     }
 }
