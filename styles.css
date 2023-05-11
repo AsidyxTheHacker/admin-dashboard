@@ -232,9 +232,14 @@ h3 {
     transition: .2s ease-in-out;
 }
 
-.project:hover {
+.project-container:hover .project {
+    opacity: .6;
+}
+
+.project-container .project:hover {
     padding: 0 1.3rem 1rem 1.3rem;
     box-shadow: inset rgb(34, 171, 250) 0 .3rem 0, inset rgb(26, 135, 197) -.3rem 0 0, rgba(0, 0, 0, 0.311) 0 .5rem .5rem;
+    opacity: 1;
 }
 
 .project-title {
@@ -247,6 +252,7 @@ h3 {
     font-size: 1.4rem;
     font-style: italic;
     letter-spacing: 1px;
+    cursor: default;
 }
 
 .project-text-block h2 {
