@@ -194,7 +194,6 @@ h3 {
     background-color: rgb(28, 166, 246);
     border: none;
     box-shadow: rgba(0, 0, 0, 0.504) 0 0 2px;
-    text-shadow: rgba(0, 0, 0, 0.511) 0 1px 2px;
     transition: .2s;
 }
 
@@ -209,7 +208,7 @@ h3 {
     display: grid;
     background-color: rgb(203, 217, 225);
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1.5fr 1fr;
+    grid-template-rows: 2fr 1fr;
 }
 
 .project-container {
