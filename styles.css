@@ -117,7 +117,7 @@ label {
     transition: .1s ease-in-out;
 }
 
-.profile-pic:hover, .profile-pic-big:hover {
+.profile-pic:hover, .profile-pic-big:hover, .account img:hover {
     border: rgb(48, 177, 251) solid 2px;
     cursor: pointer;
 }
@@ -271,7 +271,6 @@ a {
 .announcement-content h3, .accounts-recommended h3 {
     font-size: 2rem;
     margin: 0;
-    padding-bottom: .5rem;
     border-bottom: rgba(128, 128, 128, 0.567) solid 2px;
     text-shadow: rgba(157, 157, 157, 0.479) 2px 2px;
     text-align: center;
@@ -312,23 +311,27 @@ a {
     border: solid white 2px;
     border-radius: 20px;
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 .accounts-recommended {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     border-radius: 20px;
     background-color: white;
     box-shadow: inset rgb(34, 171, 250) .3rem 0 0, inset rgb(26, 135, 197) 0 -.3rem 0, rgba(0, 0, 0, 0.311) 0 .5rem .5rem;
     border: solid white 2px;
-    padding: 1rem;
-    gap: 1.5rem;
+    padding: 0 1rem 0 1rem;
 }
 
 .account {
     display: flex;
     align-items: center;
     gap: .6rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    margin-bottom: .5rem;
 }
 
 .account img {
@@ -337,6 +340,32 @@ a {
     width: 5rem;
     border: rgb(195, 195, 195) solid 2px;
     box-shadow: rgba(0, 0, 0, 0.337) 2px 2px 2px;
+}
+
+.account p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.account span {
+    color: rgba(0, 0, 0, 0.569);
+    font-size: 1rem;
+}
+
+.account .followed {
+    font-size: .8rem;
+    padding: .3rem;
+    border-radius: 20px;
+    margin-left: .8rem;
+    background-color: rgba(84, 84, 84, 0.237);
+    box-shadow: rgba(0, 0, 0, 0.295) 1px 1px 2px;
+}
+
+.account:hover {
+    padding-left: .3rem;
+    background-color: rgba(128, 128, 128, 0.112);
+    border-radius: 20px;
+    color: rgb(45, 158, 223);
 }
 
 @media(max-width:600px) {
